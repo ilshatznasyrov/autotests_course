@@ -25,16 +25,6 @@ def multiplication_chain(num):
             num_lst.clear()
     return count_multy
 
-
-
-    #if len(str(num)) >= 2:
-    #    for i in str(num):
-    #        count_multy *= int(i)
-
-
-    print(count_multy)
-    return count_multy
-
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
 
 
