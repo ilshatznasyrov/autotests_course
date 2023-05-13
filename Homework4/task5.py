@@ -15,6 +15,12 @@
 
 def josephus_task(num_people, kill_num):
     # Здесь нужно написать код
+    """
+    Функция решает задачу Иосифа Флавия
+    :param num_people: количество воинов (число)
+    :param kill_num: шаг по счёту (число)
+    :return: survivor - последний элемент списка (число)
+    """
     survivor = 0
     for i in range(1, num_people + 1):
         survivor = (survivor + kill_num) % i

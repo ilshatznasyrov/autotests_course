@@ -8,6 +8,11 @@
 
 def sum_digits(num):
     # Здесь нужно написать код
+    """
+    Функция принимает положительное число num и возвращает сумму цифр our_sum
+    :param num: положительное число
+    :return: our_sum - сумма цифр принимаемого числа
+    """
     our_sum = 0
     for i in str(num):
         our_sum += int(i)
