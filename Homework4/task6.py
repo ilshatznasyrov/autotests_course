@@ -5,10 +5,15 @@
 
 def create_phone_number(num_tuple):
     # Здесь нужно написать код
+    """
+    Функция принимает кортеж num_tuple из 10 цифр и возвращает строку этих чисел в виде номера телефона str_phone
+    :param num_tuple: кортеж из 10 цифр
+    :return: строка str_phone в виде номера телефона
+    """
     str_num = ''
     for idx, num in enumerate(num_tuple):
         str_num += str(num)
-    str_phone = str('(' + str_num[:3] + ") " + str_num[3:6] + "-" + str_num[6:] + '')
+    str_phone = f'({str_num[:3]}) {str_num[3:6]}-{str_num[6:]}'
     return str_phone
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

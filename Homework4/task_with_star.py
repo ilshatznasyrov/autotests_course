@@ -13,6 +13,15 @@
 
 def max_division_by_3(num):
     # Здесь нужно написать код
+    """
+    Функция принимает число num и возвращает другое число, удовлетворяющее условиям:
+    1) новое число должно отличаться от данного ровно одной цифрой,
+    2) новое число должно столько же знаков как исходное,
+    3) новое число должно делиться на 3,
+    4) новое число должно быть максимально возможным из всех таких чисел
+    :param num: число num
+    :return: число new_num удовлетворяющее условиям
+    """
     num_lst = []
     for char in str(num):
         num_lst.append(int(char))
@@ -29,6 +38,11 @@ def max_division_by_3(num):
     return new_num
 
 def num_from_list(lst_of_num):
+    """
+    Функция принимает список чисел lst_of_num и возвращает число num
+    :param lst_of_num: список чисел
+    :return: число num
+    """
     lst_of_num.reverse()
     num = 0
     for i, el in enumerate(lst_of_num):
