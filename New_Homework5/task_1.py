@@ -7,19 +7,7 @@
 
 
 def letter_stat(our_str):
-    """
-    Функция принимает строку our_str и возращает словарь letters_dict,
-    в котором в качестве ключей - буквы строки, а значения - количество вхождений каждой буквы в строку
-    :param our_str: исходная строка
-    :return: словарь с количеством вхождений каждой буквы в исходную строку
-    """
-    letters_dict = {}
-    our_list = [x for x in our_str]
-    while len(our_list) > 0:
-        char = our_list[0]
-        letters_dict[char] = our_list.count(char)
-        for i in range(our_list.count(our_list[0])):
-            our_list.remove(char)
+    # Здесь нужно написать код
     return letters_dict
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

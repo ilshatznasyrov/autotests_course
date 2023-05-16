@@ -7,16 +7,7 @@
 
 
 def repeats(our_str):
-    """
-    Функция принимает строку our_str и возвращает новую строку new_str
-    содержащую количество повторений каждого символа и символы исходной строки
-    :param our_str: исходная строка
-    :return: новая сформированная по условиям строка
-    """
-    our_list = [x for x in our_str]
-    for i in range(len(our_list) - 1, -1, -1):
-        our_list[i] = our_list[i] + '_' + str(our_list.count(our_list[i]))
-    new_str = ''.join(our_list)
+    # Здесь нужно написать код
     return new_str
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
