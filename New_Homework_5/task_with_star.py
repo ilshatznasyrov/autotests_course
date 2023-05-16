@@ -9,9 +9,21 @@
 # Например (Ввод --> Вывод) :
 # 2008 --> MMVIII
 
-
 def to_roman(val):
     # Здесь нужно написать код
+    """
+    Функция преобразуют арабское число (val) в римское (roman_str)
+    :param val: арабское число
+    :return: римское число
+    """
+    roman_num = {'M': 1000, 'CM': 900, 'D': 500, 'CD': 400,
+                 'C': 100, 'XC': 90, 'L': 50, 'XL': 40,
+                 'X': 10, 'IX': 9, 'V': 5, 'IV': 4, 'I': 1}
+    roman_str = ''
+    for letter, value in roman_num.items():
+        while val >= value:
+            roman_str += letter
+            val -= value
     return roman_str
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
