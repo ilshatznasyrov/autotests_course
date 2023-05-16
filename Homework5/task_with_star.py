@@ -16,33 +16,15 @@ def to_roman(val):
     :param val: арабское число
     :return: римское число
     """
+    roman_num = {'M': 1000, 'CM': 900, 'D': 500, 'CD': 400,
+                 'C': 100, 'XC': 90, 'L': 50, 'XL': 40,
+                 'X': 10, 'IX': 9, 'V': 5, 'IV': 4, 'I': 1}
+
     roman_str = ''
-    if val >= 1000:
-        roman_str = 'M' + to_roman(val - 1000)
-    elif val >= 900:
-        roman_str = 'CM' + to_roman(val - 900)
-    elif val >= 500:
-        roman_str = 'D' + to_roman(val - 500)
-    elif val >= 400:
-        roman_str = 'CD' + to_roman(val - 400)
-    elif val >= 100:
-        roman_str = 'C' + to_roman(val - 100)
-    elif val >= 90:
-        roman_str = 'XC' + to_roman(val - 90)
-    elif val >= 50:
-        roman_str = 'L' + to_roman(val - 50)
-    elif val >= 40:
-        roman_str = 'XL' + to_roman(val - 40)
-    elif val >= 10:
-        roman_str = 'X' + to_roman(val - 10)
-    elif val >= 9:
-        roman_str = 'IX' + to_roman(val - 9)
-    elif val >= 5:
-        roman_str = 'V' + to_roman(val - 5)
-    elif val >= 4:
-        roman_str = 'IV' + to_roman(val - 4)
-    elif val >= 1:
-        roman_str = 'I' + to_roman(val - 1)
+    for letter, value in roman_num.items():
+        while val >= value:
+            roman_str += letter
+            val -= value
     return roman_str
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
