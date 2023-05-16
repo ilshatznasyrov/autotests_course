@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ddda05ef-11db-49b3-adba-db6208ec7443" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework5/task_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Homework5/task_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework5/task_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Homework5/task_2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework5/task_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Homework5/task_3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework5/task_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/Homework5/task_4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework5/task_with_star.py" beforeDir="false" afterPath="$PROJECT_DIR$/Homework5/task_with_star.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +25,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "last_opened_file_path": "C:/autotests_course"
+    "last_opened_file_path": "C:/autotests_course/шаблон_дз_5"
   }
 }]]></component>
   <component name="RunManager" selected="Python.task_with_star">
