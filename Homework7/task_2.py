@@ -44,7 +44,7 @@ class PersonInfo:
         :return: строка Фамилия И.
         """
         first_name, last_name = self.name.split()
-        return last_name + " " + first_name[0] + "."
+        return f'{last_name} {first_name[0]}.'
 
     def path_deps(self):
         """

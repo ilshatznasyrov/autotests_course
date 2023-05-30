@@ -39,10 +39,7 @@ class Segment:
         :return True: отрезок пересекает ось абцисс
         False: отрезок пересекает ось ординат
         """
-        if (self.point_coordinate_1[1] * self.point_coordinate_2[1]) < 0:
-            return True
-        else:
-            return False
+        return True if (self.point_coordinate_1[1] * self.point_coordinate_2[1]) < 0 else False
 
     def y_axis_intersection(self):
         """
@@ -50,10 +47,7 @@ class Segment:
         :return True: отрезок пересекает ось ординат
         False: отрезок пересекает ось абцисс
         """
-        if (self.point_coordinate_1[0] * self.point_coordinate_2[0]) < 0:
-            return True
-        else:
-            return False
+        return True if (self.point_coordinate_1[0] * self.point_coordinate_2[0]) < 0 else False
 
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

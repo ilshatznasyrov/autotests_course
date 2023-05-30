@@ -40,10 +40,7 @@ class RomanNums:
         False: число не является палиндромом
         """
         number = str(self.from_roman())
-        if number == number[::-1]:
-            return True
-        else:
-            return False
+        return True if number == number[::-1] else False
 
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
