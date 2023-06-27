@@ -30,7 +30,7 @@ try:
     driver.get('https://fix-online.sbis.ru/page/dialogs')
     sleep(2)
     # Отправляем сообщение самому себе
-    new_message_btn = driver.find_element(By.CSS_SELECTOR, '[data-qa="sabyPage-addButton"]')
+    new_message_btn = driver.find_element(By.CSS_SELECTOR, '.icon-RoundPlus')
     new_message_btn.click()
     sleep(1)
     search_area = driver.find_element(By.CSS_SELECTOR,
