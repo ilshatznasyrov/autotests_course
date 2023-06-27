@@ -33,14 +33,10 @@ try:
     new_message_btn = driver.find_element(By.CSS_SELECTOR, '.icon-RoundPlus')
     new_message_btn.click()
     sleep(1)
-    search_area = driver.find_element(By.CSS_SELECTOR,
-                                      '.controls-Field.js-controls-Field.controls-InputBase__nativeField.controls'
-                                      '-Search__nativeField_caretEmpty.controls'
-                                      '-Search__nativeField_caretEmpty_theme_default ')
-
+    search_area = driver.find_element(By.CSS_SELECTOR, '.controls-InputBase__field input')
     search_area.send_keys('Насыров Ильшат')
-    sleep(2)
-    person = driver.find_element(By.CSS_SELECTOR, '[data-qa="msg-addressee-selector__plain-list-view"]')
+    sleep(3)
+    person = driver.find_element(By.CSS_SELECTOR, '.msg-addressee-selector__view-item-template-wrapper')
     person.click()
     sleep(1)
     text_editor = driver.find_element(By.CSS_SELECTOR, '.textEditor_Viewer__Paragraph')
